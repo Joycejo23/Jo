@@ -110,24 +110,29 @@ Step 1: Install Git
 - Make sure to select the appropriate options during the installation process.
 Step 2: Configure Git
 - Open a terminal or command prompt.
-- Set your username and email address by running the following commands: git config --global user.name "Your Name"
+- Set your username and email address by running the following commands:
+-  git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 Replace "Your Name" with your desired username and "your.email@example.com" with your email address.
 Step 3: Set up the default branch name (optional)
 - By default, Git creates a branch called "master" when you initialize a new repository with
 git init.
-- If you prefer to use a different name for the initial branch, you can set it using the following command:
+- If you prefer to use a different name for the initial branch,
+- you can set it using the following command:
 git config --global init.defaultBranch main
-This command sets the default branch name to "main". Replace "main" with your preferred branch name if desired.
+This command sets the default branch name to "main".
+Replace "main" with your preferred branch name if desired.
 6
 Step 4: Verify your Git configuration
 - To check your Git configuration settings, you can use the following command:
 git config --list
-This command will display a list of your Git configuration settings, including your username and email address.
+This command will display a list of your Git configuration settings,
+including your username and email address.
 These steps should help you set up and configure Git on your local machine.
 Remember to replace "Your Name" and "your.email@example.com" with your own information.
 Working with Remote Repository
-When working with remote repositories in Git, there are several commands and actions you can perform.
+When working with remote repositories in Git,
+there are several commands and actions you can perform.
 7
 Cloning a Remote Repository
 The git clone command is used to create a local copy of a remote repository on your machine.
@@ -141,7 +146,8 @@ git remote add <remote-name> <remote-url>
 Replace <remote-name> with a name for the remote repository (e.g., "origin") and
 <remote-url> with the URL of the remote repository. For example
 git remote add origin https://github.com/username/repository.git Pushing Changes to a Remote Repository
-After making changes to your local repository, you can push those changes to the remote repository using the git push command.
+After making changes to your local repository,
+ you can push those changes to the remote repository using the git push command.
 To push changes to a remote repository, use the following command:
 git push <remote-name> <branch-name>
 Replace <remote-name> with the name of the remote repository (e.g., "origin") and
@@ -156,7 +162,8 @@ Replace <remote-name> with the name of the remote repository (e.g.,
 "origin") and <branch-name> with the name of the branch you want to pull. For example
 git pull origin main
 These are some basic commands for working with remote repositories in Git.
-Remember to replace <remote-url>, <remote-name> and <branch-name> with the appropriate values for your specific repository.
+Remember to replace <remote-url>, <remote-name> and
+<branch-name> with the appropriate values for your specific repository.
 Result:
 Working with a remote repositories on local machine was accomplished successfully
 
@@ -175,8 +182,10 @@ Three important steps of version control:
 •git commit the changed files to create a unique snapshot of the local repository.
 •git push those changed files from the local copy of a repository to the cloud
 Check the Status of Changes Using GIT Status
-Once you start working, you can use the git status command to check what changes are being identified by git.
-To practice working with this command, use the terminal to navigate to your git practice repository:
+Once you start working, you can use the git status command to
+check what changes are being identified by git.
+To practice working with this command, 
+use the terminal to navigate to your git practice repository:
 $ cd practice-git-skillz Next, run git status. $ git status
 On branch main
 Your branch is up to date with 'origin/main'.nothing to commit, working tree clean
@@ -195,7 +204,8 @@ The output from the git status command above indicates that you have modified a 
 (e.g. README.md) that can be added to version control.
 Important Git Commands
 These two commands make up the bulk of many workflows that use git for version control:
-•git add: takes a modified file in your working directory and places the modified version in a staging area for review.
+•git add: takes a modified file in your working directory and 
+places the modified version in a staging area for review.
 •git commit: takes everything from the staging area and makes a 
 permanent snapshot of the current state of your repository that has a unique identifier.
 Add Changed Files Using git add
@@ -207,29 +217,33 @@ You can also add all of the files that you have edited at the same time using: g
 Commit Changed Files Using git commit
 Once you are ready to make a snapshot of the current state of your repository
 (i.e. move changes from staging area), you can run git commit. 
-The git commit command requires a commit message that describes the snapshot (i.e. changes) that you made in that commit.
+The git commit command requires a commit message that describes the snapshot 
+(i.e. changes) that you made in that commit.
 A commit message should outline what changed and why. 
 These messages:
 1. help collaborators and your future self understand what was changed and why.
 23CS2503 - Git and Github for beginners Lab URK23CS5076
 9
 2. allow you and your collaborators to find (and undo if necessary) changes that were previously made.
-When you are not committing a lot of changes, you can create a short one line commit message using the -m flag as follows:
+When you are not committing a lot of changes, you can create a
+short one line commit message using the -m flag as follows:
 git commit -m "Update title and author name in homework for week 3" modified:
 README.md
 no changes added to commit (use "git add" and/or "git commit -a")
-The output from the git status command above indicates that you have modified a file (e.g. README.md) that can be added to version control.
+The output from the git status command above indicates that
+you have modified a file (e.g. README.md) that can be added to version control.
 file or groups of files to version
 
 Creating branches
 To keep track of changes to this file using git, you need to:
 1. Clone the repository.
 2. Move into the cloned repository
-3. Create a new branch using the command (replace feature-branch with your desired branch name). git checkout -b feature-branch
-4. Make modifications to files in your project.
-5. Use git add to add the changes to the staging area
-6. Commit the changes with a meaningful message
-7. 
+3. Create a new branch using the command (replace feature-branch with your desired branch name).
+4. git checkout -b feature-branch
+5. Make modifications to files in your project.
+6. Use git add to add the changes to the staging area
+7. Commit the changes with a meaningful message
+8. 
 Merging branches
 To keep track of changes to this file using git, you need to:
 1. Switch back to the main branch.
@@ -254,36 +268,44 @@ To clonea remote repository, use the following command git clone <remote-url>
 ●
 Replace <remote-url> with the URL of the remote repository.
 ●
-For example, to clone a repository hosted on GitHub, you can use git clone https://github.com/username/repository.git
+For example, to clone a repository hosted on GitHub, 
+you can use git clone https://github.com/username/repository.git
 Adding a Remote Repository
 ● If you have an existing local repository and want to connect it to a remote repository,
 you can use the git remote add command. ● To add a remote repository, 
 use the following command: git remote add <remote-name>
 <remote-url>
 ●
-Replace <remote-name> with a name for the remote repository (e.g., "origin") and <remote-url> with the URL of the remote repository.
+Replace <remote-name> with a name for the remote repository 
+(e.g., "origin") and <remote-url> with the URL of the remote repository.
 ●
 For example
 git remote add origin https://github.com/username/repository.git
 Pushing Changes to a Remote Repository
-After making changes to your local repository, you can push those changes to the remote repository using the git push command. 
+After making changes to your local repository, you can push those 
+changes to the remote repository using the git push command. 
 To push changes to a remote repository, use the following command:
-git push <remote-name> <branch-name> Replace <remote-name> with the name of the remote repository (e.g., "origin") and
+git push <remote-name> <branch-name> Replace <remote-name> 
+with the name of the remote repository (e.g., "origin") and
 <branch-name> with the name of the branch you want to push. For example:
 git push origin main
 
 Pulling Changes from a Remote Repository
 ●
-To update your local repository with the latest changes from the remote repository, you can use the git pull command.
+To update your local repository with the latest changes from the remote repository, 
+you can use the git pull command.
 ●
-To pull changes from a remote repository, use the following command: git pull <remote-name> <branch-name>
+To pull changes from a remote repository,
+use the following command: git pull <remote-name> <branch-name>
 ●
-Replace <remote-name> with the name of the remote repository (e.g., "origin") and <branch-name> with the name of the branch you want to pull.
+Replace <remote-name> with the name of the remote repository (e.g., "origin") and 
+<branch-name> with the name of the branch you want to pull.
 ●
 For example
 git pull origin main
 These are some basic commands for working with remote repositories in Git.
-Rememberto replace <remote-url>, <remote-name> and <branch-name> with the appropriate values foryour specific repository.
+Rememberto replace <remote-url>, <remote-name> and 
+<branch-name> with the appropriate values foryour specific repository.
 
 Result:
 Working with remote repositories has been done successfully.
@@ -296,19 +318,23 @@ To clonea remote repository, use the following command git clone <remote-url>
 ●
 Replace <remote-url> with the URL of the remote repository.
 ●
-For example, to clone a repository hosted on GitHub, you can use git clone https://github.com/username/repository.git
+For example, to clone a repository hosted on GitHub, 
+you can use git clone https://github.com/username/repository.git
 Adding a Remote Repository
-● If you have an existing local repository and want to connect it to a remote repository, you can use the git remote add command. 
+● If you have an existing local repository and want to connect it to a remote repository, 
+you can use the git remote add command. 
 ● To add a remote repository, use the following command: git remote add <remote-name>
 <remote-url>
 ●
-Replace <remote-name> with a name for the remote repository (e.g., "origin") and <remote-url> with the URL of the remote repository.
+Replace <remote-name> with a name for the remote repository (e.g., "origin") and 
+<remote-url> with the URL of the remote repository.
 ●
 For example
 git remote add origin https://github.com/username/repository.git
 
 Pushing Changes to a Remote Repository
-After making changes to your local repository, you can push those changes to the remote repository using the git push command. 
+After making changes to your local repository,
+you can push those changes to the remote repository using the git push command. 
 To push changes to a remote repository, use the following command:
 git push <remote-name> <branch-name> Replace <remote-name> with the name of the remote repository (e.g., "origin") and 
 <branch-name> with the name of the branch you want to push. For example:
@@ -316,11 +342,14 @@ git push origin main
 
 Pulling Changes from a Remote Repository
 ●
-To update your local repository with the latest changes from the remote repository, you can use the git pull command.
+To update your local repository with the latest changes from the remote repository, 
+you can use the git pull command.
 ●
-To pull changes from a remote repository, use the following command: git pull <remote-name> <branch-name>
+To pull changes from a remote repository, 
+use the following command: git pull <remote-name> <branch-name>
 ●
-Replace <remote-name> with the name of the remote repository (e.g., "origin") and <branch-name> with the name of the branch you want to pull.
+Replace <remote-name> with the name of the remote repository (e.g., "origin") and 
+<branch-name> with the name of the branch you want to pull.
 ●
 For example
 git pull origin main
@@ -339,7 +368,8 @@ Here are some key practices and concepts to consider:
 
 Forking a Repository
 -
-When you want to contribute to a project hosted on a remote repository, it's common to start by forking the repository.
+When you want to contribute to a project hosted on a remote repository, 
+it's common to start by forking the repository.
 -
 Forking creates a personal copy of the repository under your GitHub account or another hosting platform,
 where you can freely make changes without affecting the original repository.
@@ -352,26 +382,31 @@ After forking a repository, you need to clone the forked repository to your loca
 Use the git clone command, as explained in a previous answer, to clone the forked repository.
 Adding an Upstream Remote
 -
-The original repository that you forked is known as the "upstream" repository. It represents the source of truth for the project.
+The original repository that you forked is known as the "upstream" repository. 
+It represents the source of truth for the project.
 -
-To synchronize your forked repository with the latest changes from the upstream repository, you can add an "upstream" remote.
+To synchronize your forked repository with the latest changes from the upstream repository,
+you can add an "upstream" remote.
 -
 Use the git remote add command to add the upstream remote URL. For example:
 git remote add upstream <upstream-url>
 Keeping Your Forked Repository Up to Date
 -
-To incorporate the latest changes from the upstream repository into your forked repository, follow these steps:
+To incorporate the latest changes from the upstream repository into your forked repository, 
+follow these steps:
 -
 Fetch the latest changes from the upstream remote: git fetch upstream
 -
 Checkout your local main branch: git checkout main
 -
-Merge the changes from the upstream/main branch into your local main branch: git merge upstream/main
+Merge the changes from the upstream/main branch into your
+local main branch: git merge upstream/main
 -
 Push the updated main branch to your forked repository: git push origin main
 Creating Branches for Collaborative Work
 -
-When working on a collaborative project, it's common to create branches for new features, bug fixes, or other changes.
+When working on a collaborative project, 
+it's common to create branches for new features, bug fixes, or other changes.
 -
 Use the git branch command to create a new branch: git branch <branch- name>
 -
@@ -381,22 +416,28 @@ Switch to the newly created branch using git checkout: `git checkout
 Alternatively, you can create and switch to a new branch in one command: git checkout -b <branch-name>
 Pushing Changes and Creating Pull Requests
 -
-Once you've made changes on a branch, you can push the branch to your forked repository using git push origin <branch-name>.
+Once you've made changes on a branch, 
+you can push the branch to your forked repository using git push origin <branch-name>.
 -
-After pushing the branch, you can create a pull request on the upstream repository to propose your changes for merging into the main codebase.
+After pushing the branch, 
+you can create a pull request on the upstream repository to
+propose your changes for merging into the main codebase.
 -
 On the upstream repository's page, find the "Pull requests" section and click the "New pull request" button.
 -
 Select the appropriate branches for the base (usually main) and compare (your branch) branches.
 -
-Provide a title and description for your pull request, then click "Create pull request" to submit it.
+Provide a title and description for your pull request,
+then click "Create pull request" to submit it.
 Reviewing and Merging Pull Requests
 -
-Collaborators or maintainers of the upstream repository can review and comment on your pull request.
+Collaborators or maintainers of the upstream repository 
+can review and comment on your pull request.
 -
 They may request changes or provide feedback before merging the changes.
 -
-Once the pull request is approved, it can be merged into the main branch of the upstream repository.
+Once the pull request is approved, 
+it can be merged into the main branch of the upstream repository.
 
 Result:
 Working with collaborative repository management using git is done and executed successfully.
@@ -405,11 +446,15 @@ Working with collaborative repository management using git is done and executed 
 Aim The aim of this experiment is to create implementation of core review in git
 
 Description
-Git is a powerful tool for version control, but it’s also a crucial tool for collaborating with remote
-teams. When working remotely, effective communication and collaboration arekey to ensure that
+Git is a powerful tool for version control, 
+but it’s also a crucial tool for collaborating with remote
+teams.
+When working remotely, effective communication and collaboration arekey to ensure that
 your team is working together towards a common goal.
 Use a shared repository Using a shared repository is the foundation of effective collaboration
-with Git. By hosting your repository on a remote server, you can give your team members access
+with Git. 
+By hosting your repository on a remote server, 
+you can give your team members access
 to the latest version of your code, regardless of their location.
 Create a new repository: git init
 Clone a repository: git clone [respository URL]
@@ -418,8 +463,10 @@ Fetch changes from a remote repository: git fetchPull
 changes from a remote repository: git pull Push
 changes to a remote repository: git push Use
 Branching and merging Branching and merging are powerful features of Git that allow you to
-work on multiple versions of your code simultaneously, without interfering with each other’s
-work. By using branching and merging effectively, your team can work on different features or
+work on multiple versions of your code simultaneously, 
+without interfering with each other’s
+work. By using branching and merging effectively,
+your team can work on different features or
 bug fixes in parallel, without causing conflicts.
 Create a new branch: git branch [name]Switch
 to a branch: git checkout [name]Merge a
@@ -432,40 +479,50 @@ URK23CS5076
 
 branch -d [name]
 Use Pull requests Pull requests are a great way to review and merge changes from differentteam
-members before they are merged into the main codebase. By using pull requests, you can ensure
-that your code is reviewed and tested before it is merged into the main branch, which can help
+members before they are merged into the main codebase. 
+By using pull requests, you can ensure
+that your code is reviewed and tested before it is merged into the main branch, 
+which can help
 prevent bugs and other issues.
 Create a new pull request: git request-pull [branch] [repository URL]
 Review and merge a pull request: git pull-request
 Close a pull request: git request-pull -C [branch] [repository URL]
-Use Issue Tracking Issue tracking is a great way to keep track of bugs, feature requests, and
-other issues that need to be addressed in your code. By using an issue tracking system like
-GitHub Issues, you can assign tasks to team members, track progress, and ensure that all issues
+Use Issue Tracking Issue tracking is a great way to keep track of bugs, 
+feature requests, and
+other issues that need to be addressed in your code.
+By using an issue tracking system like
+GitHub Issues, you can assign tasks to team members, 
+track progress, and ensure that all issues
 are addressed in a timely manner.
 Create a new issue: git commit -m “[issue number] [commit message]”
 Assign an issue to a team member: git assign [username]
 Clone an issue: git clone [issue number] Reopen an
 issue: git reopen [issue number] Communicate
-Effectively Effective communication is key to collaboration, especially in a remote team setting.
-Use tools like Slack or Microsoft Teams to stay in touch with your team members, and use video
+Effectively Effective communication is key to collaboration, 
+especially in a remote team setting.
+Use tools like Slack or Microsoft Teams to stay in touch with your team members, 
+and use video
 calls or screen sharing to discuss code changes or work on problems together.
 Start a video call: git video-call [username]
 Share yourscreen: gitscreen-share
 Send a message: git message [username] [message]
 Use Git hooks Git hooks are scripts that Git runs automatically at certain points in the
-Gitworkflow. You can use Git hooks to automate repetitive tasks, enforce coding standards, or
+Gitworkflow. You can use Git hooks to automate repetitive tasks, 
+enforce coding standards, or
 perform other tasks that are important to your team’s workflow.
 Install a git hook: git init [hook name]
 Write a git hook script: nano.git/hooks/[hook name]
 
 Make the Git hook script executable: chmod +x .git/hooks/[hook name]
 Use Gitsubmodules Git submodules are repositories that are embedded inside other repositories.
-You can use Git submodules to manage dependencies, or to includeshared code in multiple
+You can use Git submodules to manage dependencies, 
+or to includeshared code in multiple
 projects.
 Add a Git submodule: git submodule add [repository URL]
 Update a Gitsubmodule: gitsubmodule update
 Remove a Gitsubmodule: gitsubmodule deinit [submodule path]
-Use Git aliases Git aliases are shortcuts for commonly used Git commands. You can useGit
+Use Git aliases Git aliases are shortcuts for commonly used Git commands.
+You can useGit
 aliases to save time and improve your productivity when working with Git.
 Set up a Git alias: git config –global alias.[alias name] ‘[Git command]’
 Use a Git alias: git [alias name]
