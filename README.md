@@ -94,8 +94,9 @@ the dropdown menu, then click Settings.
 3. In the "Danger Zone" section, to the right of to "Change repository visibility",
 click Change visibility.
 4. Select a visibility.
-5. To verify that you're changing the correct repository's visibility, type the name of the repository you want to change the visibility of.
-6. Click I understand, change repository visibility.
+5. To verify that you're changing the correct repository's visibility,
+6. type the name of the repository you want to change the visibility of.
+7. Click I understand, change repository visibility.
 OUTPUT SCREENSHOTS:
 RESULT
 Installation Of Git And Creating Repositories Is Done Successfully
@@ -123,7 +124,8 @@ Step 4: Verify your Git configuration
 - To check your Git configuration settings, you can use the following command:
 git config --list
 This command will display a list of your Git configuration settings, including your username and email address.
-These steps should help you set up and configure Git on your local machine. Remember to replace "Your Name" and "your.email@example.com" with your own information.
+These steps should help you set up and configure Git on your local machine.
+Remember to replace "Your Name" and "your.email@example.com" with your own information.
 Working with Remote Repository
 When working with remote repositories in Git, there are several commands and actions you can perform.
 7
@@ -133,23 +135,28 @@ To clone a remote repository, use the following command git clone <remote-url>
 Replace <remote-url> with the URL of the remote repository.
 For example, to clone a repository hosted on GitHub, you can use
 git clone https://github.com/username/repository.git Adding a Remote Repository
-If you have an existing local repository and want to connect it to a remote repository, you can use the git remote add command. To add a remote repository, use the following command:
+If you have an existing local repository and want to connect it to a remote repository,
+you can use the git remote add command. To add a remote repository, use the following command:
 git remote add <remote-name> <remote-url>
 Replace <remote-name> with a name for the remote repository (e.g., "origin") and
 <remote-url> with the URL of the remote repository. For example
 git remote add origin https://github.com/username/repository.git Pushing Changes to a Remote Repository
 After making changes to your local repository, you can push those changes to the remote repository using the git push command.
 To push changes to a remote repository, use the following command:
-git push <remote-name> <branch-name> Replace <remote-name> with the name of the remote repository (e.g., "origin") and <branch- name> with the name of the branch you want to push. For example:
+git push <remote-name> <branch-name>
+Replace <remote-name> with the name of the remote repository (e.g., "origin") and
+<branch- name> with the name of the branch you want to push. For example:
 git push origin main
 8
 Pulling Changes from a Remote Repository
-To update your local repository with the latest changes from the remote repository, you can use the git pull command. To pull changes from a remote repository, use the following command:
+To update your local repository with the latest changes from the remote repository,
+you can use the git pull command. To pull changes from a remote repository, use the following command:
 git pull <remote-name> <branch-name>
 Replace <remote-name> with the name of the remote repository (e.g.,
 "origin") and <branch-name> with the name of the branch you want to pull. For example
 git pull origin main
-These are some basic commands for working with remote repositories in Git. Remember to replace <remote-url>, <remote-name> and <branch-name> with the appropriate values for your specific repository.
+These are some basic commands for working with remote repositories in Git.
+Remember to replace <remote-url>, <remote-name> and <branch-name> with the appropriate values for your specific repository.
 Result:
 Working with a remote repositories on local machine was accomplished successfully
 
@@ -157,7 +164,8 @@ Working with a remote repositories on local machine was accomplished successfull
 Aim:
 To set up and configure Git on your local machine.
 Version Control System:
-Version control systems are a category of software tools that helps in recording changes made to files by keeping a track of modifications done in the code.
+Version control systems are a category of software tools that helps in recording 
+changes made to files by keeping a track of modifications done in the code.
 Types of Version Control Systems:
 • Local Version Control Systems
 • Centralized Version Control Systems
@@ -183,19 +191,23 @@ On branch main
 Your branch is up-to-date with 'origin/main'.Changes not staged for commit:
 modified: README.md
 no changes added to commit (use "git add" and/or "git commit -a")
-The output from the git status command above indicates that you have modified a file (e.g. README.md) that can be added to version control.
+The output from the git status command above indicates that you have modified a file 
+(e.g. README.md) that can be added to version control.
 Important Git Commands
 These two commands make up the bulk of many workflows that use git for version control:
 •git add: takes a modified file in your working directory and places the modified version in a staging area for review.
-•git commit: takes everything from the staging area and makes a permanent snapshot of the current state of your repository that has a unique identifier.
+•git commit: takes everything from the staging area and makes a 
+permanent snapshot of the current state of your repository that has a unique identifier.
 Add Changed Files Using git add
-After making changes, you can add either an individual control tracking. To add a single file, run the command: git add file-name.extension
+After making changes, you can add either an individual control tracking. 
+To add a single file, run the command: git add file-name.extension
 For example, to add the README.md file, you would use:
 git add README.md
 You can also add all of the files that you have edited at the same time using: git add .
 Commit Changed Files Using git commit
 Once you are ready to make a snapshot of the current state of your repository
-(i.e. move changes from staging area), you can run git commit. The git commit command requires a commit message that describes the snapshot (i.e. changes) that you made in that commit.
+(i.e. move changes from staging area), you can run git commit. 
+The git commit command requires a commit message that describes the snapshot (i.e. changes) that you made in that commit.
 A commit message should outline what changed and why. 
 These messages:
 1. help collaborators and your future self understand what was changed and why.
@@ -224,9 +236,10 @@ To keep track of changes to this file using git, you need to:
 git checkout main
 2. Merge the branch into the main branch git merge feature-branch
 3. Resolve conflicts (if necessary)
-i. Open the conflicting files and resolve the conflicts manually. ii. After resolving conflicts, add the changes to the staging area and commit: git add . git commit
+i. Open the conflicting files and resolve the conflicts manually. ii.
+After resolving conflicts, add the changes to the staging area and commit: git add . git commit
 -m "Merge feature-branch into main"
-4. Push changes to github using the following command. git push origin main
+5. Push changes to github using the following command. git push origin main
 23CS2503 - Git and Github for beginners Lab URK23CS5076
 10
 
@@ -236,13 +249,16 @@ Working with Version Control in software application development has been execut
 4.ex
 Cloning a Remote Repository
 ●
-The git clone command is used to create a local copy of a remote repository on your machine. To clonea remote repository, use the following command git clone <remote-url>
+The git clone command is used to create a local copy of a remote repository on your machine. 
+To clonea remote repository, use the following command git clone <remote-url>
 ●
 Replace <remote-url> with the URL of the remote repository.
 ●
 For example, to clone a repository hosted on GitHub, you can use git clone https://github.com/username/repository.git
 Adding a Remote Repository
-● If you have an existing local repository and want to connect it to a remote repository, you can use the git remote add command. ● To add a remote repository, use the following command: git remote add <remote-name>
+● If you have an existing local repository and want to connect it to a remote repository,
+you can use the git remote add command. ● To add a remote repository, 
+use the following command: git remote add <remote-name>
 <remote-url>
 ●
 Replace <remote-name> with a name for the remote repository (e.g., "origin") and <remote-url> with the URL of the remote repository.
@@ -250,8 +266,10 @@ Replace <remote-name> with a name for the remote repository (e.g., "origin") and
 For example
 git remote add origin https://github.com/username/repository.git
 Pushing Changes to a Remote Repository
-After making changes to your local repository, you can push those changes to the remote repository using the git push command. To push changes to a remote repository, use the following command:
-git push <remote-name> <branch-name> Replace <remote-name> with the name of the remote repository (e.g., "origin") and <branch-name> with the name of the branch you want to push. For example:
+After making changes to your local repository, you can push those changes to the remote repository using the git push command. 
+To push changes to a remote repository, use the following command:
+git push <remote-name> <branch-name> Replace <remote-name> with the name of the remote repository (e.g., "origin") and
+<branch-name> with the name of the branch you want to push. For example:
 git push origin main
 
 Pulling Changes from a Remote Repository
@@ -290,8 +308,10 @@ For example
 git remote add origin https://github.com/username/repository.git
 
 Pushing Changes to a Remote Repository
-After making changes to your local repository, you can push those changes to the remote repository using the git push command. To push changes to a remote repository, use the following command:
-git push <remote-name> <branch-name> Replace <remote-name> with the name of the remote repository (e.g., "origin") and <branch-name> with the name of the branch you want to push. For example:
+After making changes to your local repository, you can push those changes to the remote repository using the git push command. 
+To push changes to a remote repository, use the following command:
+git push <remote-name> <branch-name> Replace <remote-name> with the name of the remote repository (e.g., "origin") and 
+<branch-name> with the name of the branch you want to push. For example:
 git push origin main
 
 Pulling Changes from a Remote Repository
@@ -313,14 +333,16 @@ Working with remote repositories has been done successfully.
 5.ex
 Aim:
 The aim of this exercise is to learn and understand how to work with collaborative repository management using git.
-Working with collaborative repository management using Git involves collaborating with other developers and effectively managing changes to a shared codebase.
+Working with collaborative repository management using Git involves collaborating with 
+other developers and effectively managing changes to a shared codebase.
 Here are some key practices and concepts to consider:
 
 Forking a Repository
 -
 When you want to contribute to a project hosted on a remote repository, it's common to start by forking the repository.
 -
-Forking creates a personal copy of the repository under your GitHub account or another hosting platform, where you can freely make changes without affecting the original repository.
+Forking creates a personal copy of the repository under your GitHub account or another hosting platform,
+where you can freely make changes without affecting the original repository.
 -
 To fork a repository on GitHub, navigate to the repository's page and click the "Fork" button.
 Cloning a Forked Repository
